@@ -1,24 +1,17 @@
-let nombre = prompt("Introduce tu nombre").toUpperCase();
-console.log(nombre);
-let apellido = prompt("Introduce tu apellido").toUpperCase();
-console.log(apellido);
-let menordeedad = true;
-do {
-    let edad = prompt("Introduce tu edad:");
-     if ((edad == "")||(edad == null)) {
-        alert("Por favor, introduce una edad válida.");
-      } else if (Number(edad) >= 18) {
-        alert("Bienvenido a nuestro sitio web " + nombre + " " + apellido);
-        menordeedad = false;
-        console.log(edad)
-    } else if (Number(edad) < 18) {
-        alert("Disculpe, para acceder al sitio web debe ser mayor de edad.");
-        break;
-        /*Aca deberia poner algo para que no muestre la pagina*/
-    } else {
-        alert("Por favor, introduce una edad válida.");
-    }
-} while (menordeedad);
+
+
+function mostrarNombre() {
+    let nombre = document.getElementById("nombreInput").value;
+    let contenedor = document.createElement("div");
+    contenedor.innerHTML = "<p> BIENVENIDO " + nombre + "</p> <button id='boton-siguiente'>Siguiente</button>"
+    document.body.appendChild(contenedor);
+}
+function aa() {alert("blabla")}
+
+let boton2 = getElementById("boton-siguiente");
+
+boton2.addEventListener("click", aa)
+
 const IVA = 1.21
 const productos = [
     { nombre: "FRUTALCREAM", precio: 1000 },
@@ -55,3 +48,11 @@ function calcularpreciofinal() {
 }
 mostrarproductos()
 calcularpreciofinal()
+
+/*
+-DOM
+-Eventos
+-LocalStorage
+-NADA de prompt, alert, confirm
+-Arrays de objetos y funciones de orden superior
+-ENTREGAR POR GITHUB*/
