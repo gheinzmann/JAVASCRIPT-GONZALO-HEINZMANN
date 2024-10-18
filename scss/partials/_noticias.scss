@@ -1,0 +1,22 @@
+.noticias {
+    @include flex (center, null, row);
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.noticias article{
+    @include dimensions (null, 100%);
+    margin-top: 10px;
+    padding: 10px;
+    @include border (solid, 8px, #639534, 15px);
+}
+
+.parrafo-article{
+    @include flex (center, null, null);
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1rem;}
+
+.video{
+    @include dimensions (100%, null)
+}

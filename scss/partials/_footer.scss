@@ -1,0 +1,21 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.redes{
+    @include flex (null, center, row);
+    margin: 0px 0px 0px 20px;
+    img{
+        @include dimensions (35px, auto);
+        margin: 0px 10px;
+    }
+}
+
+.eslogan{
+    @include flex (center, center, null);
+    @include dimensions (100%, null);
+    font-size: 2em;
+    font-weight: 1000; 
+}

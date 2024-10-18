@@ -1,0 +1,296 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  background-color: #639534;
+  padding: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  max-height: 500px;
+  max-width: 281px;
+  z-index: 0;
+}
+
+.flecha-prev, .flecha-next {
+  background-image: none;
+}
+.flecha-prev::after, .flecha-next::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.flecha-prev {
+  transform: rotate(-135deg);
+}
+
+.flecha-next::after {
+  transform: rotate(45deg);
+}
+
+.marcadores [data-bs-target] {
+  background-color: black;
+}
+
+.marcadores .active {
+  background-color: black;
+}
+
+.d-block {
+  width: auto;
+  height: 500px;
+}
+
+.noticias {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.noticias article {
+  height: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: solid 8px #639534;
+  border-radius: 15px;
+}
+
+.parrafo-article {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.video {
+  width: 100%;
+}
+
+.row article img {
+  width: 50%;
+  height: auto;
+  margin: 0px 10px;
+}
+
+
+.parrafo-producto {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  text-align: center;
+  width: 50%;
+  border: solid 4px #ffffff;
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+p {
+  margin: 0px;
+}
+
+.main-productos {
+  background-color: #639534;
+}
+
+.img-producto {
+  width: 100%;
+  height: 100%;
+}
+
+.contacto form label {
+  display: block;
+  margin: 10px 0px;
+}
+.contacto form div p {
+  margin: 10px 0px;
+}
+.contacto form input {
+  width: 100%;
+  max-width: 500px;
+}
+.contacto form textarea {
+  display: block;
+  margin: 10px 0px;
+  width: 100%;
+  height: 7rem;
+  max-width: 500px;
+}
+
+.enviar-mensaje {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #198754;
+  border: solid 2px #198754;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+.enviar-mensaje:hover {
+  background-color: #198754;
+  color: #ffffff;
+}
+
+.mapa {
+  width: 100%;
+  height: 400px;
+}
+
+.horarios {
+  margin-top: 47px;
+}
+
+h4 {
+  margin: 10px 0px;
+}
+
+.main-contacto {
+  margin: 30px 0px;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px 0px 0px 20px;
+}
+.redes img {
+  width: 35px;
+  height: auto;
+  margin: 0px 10px;
+}
+
+.eslogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 2em;
+  font-weight: 1000;
+}
+
+@media (max-width: 576px) {
+  .eslogan p {
+    font-size: 1rem;
+  }
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #639534;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%; /* Ajusta según el tamaño de tu contenedor */
+}
+
+.img-producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.parrafo-producto {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  text-align: center;
+  width: 100%;
+  border: solid 4px #ffffff;
+  border-radius: 15px;
+  color: #ffffff;
+  flex-direction: column;
+}
+
+.acciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.control-cantidad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.control-cantidad button {
+  background-color: #f29d0f;
+  border-color: #ffffff;
+  padding: 5px 10px;
+  font-size: 18px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.control-cantidad input {
+  width: 40px;
+  text-align: center;
+  border: none;
+}
+
+.btn-cantidad {
+  background-color: #f29d0f;
+  border-color: #ffffff;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.precio-total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.agregar-carrito {
+  background-color: #f29d0f;
+  border-color: #ffffff;
+  margin:10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .producto {
+      width: 100%;
+  }
+}
+
+
+/*# sourceMappingURL=main.css.map */

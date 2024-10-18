@@ -1,0 +1,55 @@
+.contacto {
+    form {
+        label{
+            display: block;
+            margin: 10px 0px;
+        }
+        div {
+            p{
+                margin: 10px 0px;
+            }
+        }
+        input{
+            width: 100%;
+            max-width: 500px;}
+        textarea{
+            display: block;
+            margin: 10px 0px;
+            @include dimensions (100%, 7rem);
+            max-width: 500px;
+        }         
+    }
+}
+
+.enviar-mensaje{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #198754; 
+    @include border (solid, 2px, #198754, 5px);
+    background-color: #ffffff;
+    &:hover{
+        background-color: #198754; 
+        color: #ffffff;
+    } 
+}
+
+.mapa{
+    @include dimensions (100%, 400px);
+}
+
+.horarios{
+    margin-top: 47px;
+}
+
+h4{
+    margin:10px 0px;
+}
+
+.main-contacto{
+    margin: 30px 0px;
+}
+
+.titulo{
+    font-size: 2rem;
+    font-weight: 500;
+}

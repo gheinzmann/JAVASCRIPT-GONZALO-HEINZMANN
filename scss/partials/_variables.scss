@@ -1,0 +1,16 @@
+@mixin flex ($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+ 
+@mixin border ($style, $width, $color, $radius) {
+    border: $style $width $color;
+    border-radius: $radius;
+}
+
+@mixin dimensions ($width, $height) {
+    width: $width;
+    height: $height;
+}

@@ -1,0 +1,42 @@
+aside{
+  @include flex (center, null, null);
+  background-color: #639534;
+  padding: 20px;    
+}
+
+.carousel-container{
+  @include flex (center, null, null);
+  max-height: 500px;
+  max-width: 281px;
+  z-index: 0
+}
+
+.flecha-prev,.flecha-next {
+  &::after{
+  content: '';
+  display: inline-block;
+  @include dimensions (20px, 20px);
+  border-top: 2px solid black;
+  border-right: 2px solid black; 
+  }
+  background-image: none;
+}
+
+.flecha-prev {
+  transform: rotate(-135deg);
+}
+.flecha-next::after {
+  transform: rotate(45deg);
+}
+.marcadores [data-bs-target] {
+  background-color: black;
+}
+.marcadores {
+  .active {
+    background-color: black;
+  }    
+}
+
+.d-block {
+  @include dimensions (auto, 500px);
+}
